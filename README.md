@@ -1,4 +1,3 @@
-# Avido Training Soloduhin
 
 ## Setup
 
