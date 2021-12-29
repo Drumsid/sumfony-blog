@@ -3,6 +3,7 @@
 {% block title %}Hello PostsController!{% endblock %}
 
 {% block body %}
+    <a href="{{ path('new_blog_post') }}">Создать пост</a><br><br><br>
     {% for post in posts %}
         <a href="{{ path('blog_show', {'slug': post.slug}) }}">{{ post.title }}</a><br><br>
     {% endfor %}

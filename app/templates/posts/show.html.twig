@@ -3,4 +3,8 @@
 
 {% block body %}
         {{ post.body }}
+        <br><br><br>
+        <a href="{{ path('blog_post_edit', {'slug': post.slug}) }}">Редактировать</a><br><br><br>
+        <a href="{{ path('blog_posts') }}">все посты</a><br><br><br>
+        <a href="{{ path('blog_post_delete', {'slug': post.slug}) }}">Удалить</a><br><br><br>
 {% endblock %}
